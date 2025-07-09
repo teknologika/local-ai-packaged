@@ -29,11 +29,10 @@ http://{$SEARXNG_HOSTNAME} {
     reverse_proxy searxng:8080
 }
 
-
-# # Ollama API
-# http://{$OLLAMA_HOSTNAME} {
-#     reverse_proxy ollama:11434
-# }
+# Ollama API
+http://{$OLLAMA_HOSTNAME} {
+     reverse_proxy 192.168.1.20:11434
+}
 
 # Supabase
 http://{$SUPABASE_HOSTNAME} {
